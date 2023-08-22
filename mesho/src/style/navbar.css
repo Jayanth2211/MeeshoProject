@@ -1,0 +1,245 @@
+.navbar{
+  
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+   color: white;
+    box-shadow: 1px 1px 1px white;
+  height: 70px;
+ 
+  
+
+   
+   
+  
+}
+.navbar a:hover{
+    color: red;
+    font-weight: bold;
+}
+.parentNav{
+    position: sticky;
+    top: 0px;
+    padding: 1px 0px;
+    z-index: 1;
+    background-color: #152737;
+}
+.logo img{
+    height: 300%;
+    width: 500%;
+}
+.logo{
+ 
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.serchbar img{
+    height: 23px;
+   width: 23px;
+}
+.serchbar input{
+   
+    height: 35px;
+    width: 320px;
+  
+   border: none;
+  
+   outline: none;
+}
+.serchbar input::placeholder{
+    font-size: 12px;
+}
+.navbar a{
+    font-size: 15px;
+}
+.serchbar{
+    color: black;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 5px;
+  
+}
+.conn a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    margin: 0px 8px;
+    font-weight: 500;
+}
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin: 0px 10px;
+     height: 60px;
+    
+    
+   
+    
+}
+.downConntent{
+  display: none;
+  background-color:white;
+  color:black;
+  padding: 10px 0px;
+  border-radius: 10px;
+  border: #152737;
+ 
+    }
+.download1:hover{
+    .downConntent{
+     
+    display: flow-root;
+    transform: translatey(0px);
+    width: 150px;
+  position: fixed;
+    text-align: center;
+    }
+     }
+     .download:hover{
+        color:rgb(244, 51, 151) ;
+        border-bottom: 3px rgb(244, 51, 151) solid;
+     }
+    
+       
+   
+
+
+.suplier{
+    margin: 0px 20px;
+}
+
+
+.download span{
+   color: white;
+}
+
+
+.mobil{
+    border: 1px solid;
+}
+.profile img{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+.conn{
+    display: flex;
+    align-items: center;
+    
+}
+.profile{
+   padding-top: 10px;
+    height: 60px;
+    text-align: center;
+   margin: 0px 10px;
+}
+
+.profile a{
+    display: block;
+ 
+}
+.profileAll span{
+    color: white;
+}
+.profileInside{
+   
+    position: fixed;
+    display: none;
+    margin-top: 1px;
+    padding: 5px;
+    color: black;
+    background-color:whitesmoke;
+   transform: translatex(-40px);
+}
+.profileAll:hover{
+    .profileInside{
+        display: flow-root;
+    }
+    .profile{
+        border-bottom: 3px rgb(244, 51, 151) solid;
+    }
+}
+.profileInside button{
+    background-color:rgb(244, 51, 151) ;
+    display: block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+   margin-left: 20px;
+    color: white;
+    font-size: 15px;
+
+}
+
+.cart{
+    text-align: center;
+    margin: 0px 20px;
+}
+.cart sup{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+     font-size: 10px;
+     padding: 0px 5px;
+    border-radius: 60px;
+   
+   
+  
+   
+}
+.cart a{
+    display: block;
+    transform: translatex(-10px);
+    
+}
+.link{
+   
+    height: 85px;
+    background-color:#152737;
+    border-bottom: 3px solid white;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.link li{
+    display: inline-block;
+    /* border: 1px solid; */
+    
+    margin: 0px 20px 0px 100px;
+  
+}
+.link ul div{
+    /* border: 2px solid;
+    transform: translateX(-2px); */
+    text-align: center;
+}
+
+    
+  .link ul div:hover{
+    color: red;
+    font-weight: bolder;
+
+}
+
+#toy{
+    margin-left: 250px;
+}
+
+
+.faurites{
+   
+    margin: 0px 5px;
+}
+.faurites span{
+    color: red;
+    font-size: 15px;
+}
+

@@ -1,0 +1,68 @@
+.home{
+    /* background-image: url(https://th.bing.com/th/id/OIP.7CWSMsXPd0FUPiUr2lelxAAAAA?w=273&h=182&c=7&r=0&o=5&pid=1.7); */
+  background-color:#25252536 ;
+}  
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+
+ 
+}
+.main a{
+    text-decoration: none;
+}
+.mainc{
+    background-color: white;
+  
+   height: 450px;
+}
+.mainContent{
+    width: 400px;
+    padding: 10px;
+    margin-top: 70px;
+    
+  
+}
+.mainContent a{
+    text-decoration: none;
+    color: black;
+    
+}
+.mainContent h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.DelContent{
+    display: flex;
+    margin-left: 10px;
+  align-items: center;
+}
+
+.freeDEl{
+    display: flex;
+    margin-right: 20px;
+}
+.deliveryLink a{
+  
+    display: block;
+    width: 60px;
+
+}
+.vistPlaystore{
+    background-color: rgb(159, 32, 137);
+    display: flex;
+    align-items: center;
+    width: 250px;
+    padding: 3px 5px;
+    border-radius: 10px;
+    margin: 20px 20px;
+   
+}
+.vistPlaystore a{
+    color: white;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+

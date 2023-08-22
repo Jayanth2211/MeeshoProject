@@ -1,0 +1,43 @@
+.catrdetails{
+    display: flex;
+  width: 600px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px wheat;
+}
+.details1 span{
+   display: block;
+}
+.cart{
+    text-align: left;
+}
+.details1 #price{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.details1 #free{
+    font-size: 10px;
+    
+}
+.details1 button{
+    border: none;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.details1 .qty span{
+    display: inline-block;
+    border: 2px darkgreen solid;
+    background-color: darkgreen;
+  font-weight: bold;
+ padding: 2px 2px;
+    margin-right: 3px;
+    color: white;
+    font-size: 10px;
+    
+}
+.details1 .qty{
+    border: 1px solid wheat;
+    border-radius: 10px;
+    font-size: 12px;
+   width: 80px;
+    background-color:antiquewhite;
+}
