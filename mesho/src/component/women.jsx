@@ -12,7 +12,7 @@ const Women = () => {
     let navigate=useNavigate()
     useEffect(()=>{
       let fetchData=async()=>{
-    let res=await axios.get('http://localhost:4000/women')
+    let res=await axios.get('https://meshoproject.onrender.com/women')
     console.log(res.data);
     setW(res.data)
     setDomi(res.data)
@@ -26,7 +26,7 @@ const Women = () => {
           if(x.title==title){
             
 
-            axios.post('http://localhost:4000/fav',{image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
+            axios.post('https://meshoproject.onrender.com/fav',{image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
               alert(res.data.message)
               navigate('/fav')
             })
@@ -39,7 +39,7 @@ const Women = () => {
     let addcart=(title)=>{
           women.filter((x)=>{
             if(x.title==title){
-               axios.post('http://localhost:4000/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
+               axios.post('https://meshoproject.onrender.com/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
                 alert(res.data.message)
               })
               }

@@ -9,7 +9,7 @@ const Kids = () => {
     let navigate=useNavigate()
     useEffect(()=>{
       let fetchData=async()=>{
-    let res=await axios.get('http://localhost:4000/kids')
+    let res=await axios.get('https://meshoproject.onrender.com/kids')
     console.log(res.data);
     setKid(res.data)
     setDomi(res.data)
@@ -23,7 +23,7 @@ const Kids = () => {
           if(x.title==title){
             
 
-            axios.post('http://localhost:4000/fav',{image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
+            axios.post('https://meshoproject.onrender.com/fav',{image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
               alert(res.data.message)
               navigate('/fav')
             })
@@ -36,7 +36,7 @@ const Kids = () => {
     let addcart=(title)=>{
           kid1.filter((x)=>{
             if(x.title==title){
-               axios.post('http://localhost:4000/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
+               axios.post('https://meshoproject.onrender.com/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
                 alert(res.data.message)
               })
               }

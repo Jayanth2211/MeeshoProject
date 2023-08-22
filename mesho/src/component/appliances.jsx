@@ -13,7 +13,7 @@ let navigate=useNavigate()
 
 useEffect(()=>{
   let fetchData=async()=>{
-let res=await axios.get('http://localhost:4000/appliances')
+let res=await axios.get('https://meshoproject.onrender.com/appliances')
 console.log(res.data);
 setEle(res.data)
 setdom(res.data)
@@ -27,7 +27,7 @@ let addFav=(title)=>{
       if(x.title==title){
         
 
-        axios.post('http://localhost:4000/fav',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
+        axios.post('https://meshoproject.onrender.com/fav',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
           alert(res.data.message)
           navigate('/fav')
         })
@@ -40,7 +40,7 @@ let addFav=(title)=>{
 let addcart=(title)=>{
       appliances.filter((x)=>{
         if(x.title==title){
-           axios.post('http://localhost:4000/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
+           axios.post('https://meshoproject.onrender.com/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
             alert(res.data.message)
           })
           }

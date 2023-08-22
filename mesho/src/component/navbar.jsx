@@ -40,7 +40,7 @@ const Navbar = () => {
       
       useEffect(()=>{
         let fetchData=async()=>{
-          let res=await axios.get('http://localhost:4000/cart')
+          let res=await axios.get('https://meshoproject.onrender.com/cart')
           setCart(res.data)
         }
         fetchData()

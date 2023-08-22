@@ -18,7 +18,7 @@ let MenPage=()=>{
   
        useEffect(()=>{
         let fetchData=async()=>{
-      let res=await axios.get('http://localhost:4000/men')
+      let res=await axios.get('https://meshoproject.onrender.com/men')
       
       setProduct(res.data)
         }
@@ -30,7 +30,7 @@ let MenPage=()=>{
 let addcart=(title)=>{
   product.filter((x)=>{
     if(x.title==title){
-       axios.post('http://localhost:4000/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
+       axios.post('https://meshoproject.onrender.com/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
         alert(res.data.message)
       })
       }

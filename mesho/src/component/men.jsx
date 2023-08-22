@@ -11,7 +11,7 @@ const Men = () => {
    
     useEffect(()=>{
       let fetchData=async()=>{
-    let res=await axios.get('http://localhost:4000/men')
+    let res=await axios.get('https://meshoproject.onrender.com/men')
     console.log(res.data);
     setMen(res.data)
     setDomi(res.data)
@@ -25,7 +25,7 @@ const Men = () => {
           if(x.title==title){
             
 
-            axios.post('http://localhost:4000/fav',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
+            axios.post('https://meshoproject.onrender.com/fav',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
               alert(res.data.message)
               nav('/fav')
             })
@@ -38,7 +38,7 @@ const Men = () => {
     let addcart=(title)=>{
           men.filter((x)=>{
             if(x.title==title){
-               axios.post('http://localhost:4000/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
+               axios.post('https://meshoproject.onrender.com/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
                 alert(res.data.message)
               })
               }

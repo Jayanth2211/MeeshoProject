@@ -16,7 +16,7 @@ let SinglePage=()=>{
     
     useEffect(()=>{
         let fetchData=async()=>{
-      let res=await axios.get('http://localhost:5000/electronics')
+      let res=await axios.get('https://meshoproject.onrender.com/electronics')
       
       setProduct(res.data)
         }
