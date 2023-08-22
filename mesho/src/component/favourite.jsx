@@ -7,7 +7,7 @@ const Favourites = () => {
 
     useEffect(()=>{
       let fetchData=async()=>{
-        let res=await axios.get('http://localhost:4000/fav')
+        let res=await axios.get('https://meshoproject.onrender.com/fav')
         setFav(res.data)
       }
       fetchData()
