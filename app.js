@@ -16,7 +16,7 @@ const cors=require('cors')
 
  
 
-const port=4000
+const port=4001
 
 //midle wares
 
