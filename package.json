@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Jayanth2211/MeeshoProject/issues"
   },
-  "homepage": "https://github.com/Jayanth2211/MeeshoProject#readme",
+
   "dependencies": {
     "concurrently": "^8.2.1",
     "cors": "^2.8.5",
