@@ -28,7 +28,7 @@ let SinglePage=()=>{
 let addcart=(title)=>{
   product.filter((x)=>{
     if(x.title==title){
-       axios.post('http://localhost:5000/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
+       axios.post('https://meshoproject.onrender.com/cart',{qty:1,type:x.type,image:x.image,title:x.title,price:x.price,rating:x.rating}).then((res)=>{
         alert(res.data.message)
       })
       }
